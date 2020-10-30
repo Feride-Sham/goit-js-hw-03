@@ -115,22 +115,51 @@
 // //}
 
 // https://www.codewars.com/kata/5f70c883e10f9e0001c89673/train/javascript
-const flip = (d, a) => {
-  switch (d) {
-    case 'R':
-      return a.sort(compareNaturalOrder);
-    case 'L':
-      return a.sort(compareReverseOrder);
-  }
-};
+// const flip = (d, a) => {
+//   switch (d) {
+//     case 'R':
+//       return a.sort(compareNaturalOrder);
+//     case 'L':
+//       return a.sort(compareReverseOrder);
+//   }
+// };
 
-function compareNaturalOrder(a, b) {
-  return a - b;
-}
+// function compareNaturalOrder(a, b) {
+//   return a - b;
+// }
 
-function compareReverseOrder(a, b) {
-  return b - a;
-}
+// function compareReverseOrder(a, b) {
+//   return b - a;
+// }
 
-console.log(flip('R', [13, 2, 4, 7, 93]));
-console.log(flip('L', [1, 4, 5, 3, 5]));
+// console.log(flip('R', [13, 2, 4, 7, 93]));
+// console.log(flip('L', [1, 4, 5, 3, 5]));
+
+// https://www.codewars.com/kata/57a386117cb1f31890000039/train/javascript
+// function parseF(s) {
+//   let value = Number.parseFloat(s);
+//   if (Number.isNaN(value)) {
+//     return null;
+//   } else {
+//     return value;
+//   }
+
+// }
+// console.log(parseF('s'));
+// console.log(parseF('5'));
+// console.log(parseF(5));
+// console.log(parseF(NaN));
+// console.log(parseF(null));
+// console.log(parseF(undefined));
+
+// https://www.codewars.com/kata/5a0be7ea8ba914fc9c00006b/train/javascript
+// function sakuraFall(v) {
+//   const distance = 80 * 5;
+//   return v > 0 ? distance / v : 0;
+// }
+// console.log(sakuraFall(5));
+// console.log(sakuraFall(10));
+// console.log(sakuraFall(-1));
+
+const array = [1, 2, [4, [5]], [6, [7, 8, [9]]]];
+console.log(array.flat(1));
