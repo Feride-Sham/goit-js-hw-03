@@ -4,6 +4,7 @@
 // Используй деструктурирующее присваивание для параметра функции({ name }) без пробелов и переносов на новую строку.
 
 // Write code under this line
+// -----первый вариант записи
 const getUsersWithGender = (array, gender) => {
   return array
     .filter(user => {
@@ -15,6 +16,12 @@ const getUsersWithGender = (array, gender) => {
       return name;
     });
 };
+
+// -----второй вариант записи
+const getUsersWithGender = (array, gender) =>
+  array
+    .filter(({ gender: userGender }) => userGender === gender)
+    .map(({ name }) => name);
 
 // console.log(getUsersWithGender(users, 'male'));
 

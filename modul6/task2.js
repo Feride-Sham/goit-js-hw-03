@@ -8,14 +8,15 @@
 // Write code under this line
 
 // -----первый вариант записи
-const getUsersWithEyeColor = (array, color) => {
-  return array.filter(user => {
-    const { eyeColor: userEyeColor } = user;
+// const getUsersWithEyeColor = (array, color) => {
+//   return array.filter(user => {
+//     const { eyeColor: userEyeColor } = user;
 
-    return eyeColor === color;
-  });
-};
+//     return eyeColor === color;
+//   });
+// };
 
+// -----второй вариант записи
 const getUsersWithEyeColor = (array, color) =>
   array.filter(({ eyeColor }) => eyeColor === color);
 
